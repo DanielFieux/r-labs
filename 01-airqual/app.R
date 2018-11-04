@@ -32,7 +32,9 @@ server <- function(input, output) {
      # suppress days from pairs graph
      d <- airquality[,1:5]
      d <- d[d$Month >= input$month[1] & d$Month <= input$month[2], ]
-     pairs(d, panel = panel.smooth, main = "airquality data")
+     pairs(d, panel = panel.smooth,
+           pch=".", lwd = 2, col = "blue", 
+           main = "airquality data")
    })
    
    output$values <- renderTable({
