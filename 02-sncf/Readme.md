@@ -1,0 +1,1 @@
+Cet exemple démontre l'utilisation de shiny pour présenter des données, ici en provenance d'une source open data de la SNCF
